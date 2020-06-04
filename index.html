@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<title>Checkpoint JS 3</title>
+	<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<script src="script.js">
+	</script>
+
+	<form>
+		<label for="firstName">First name:</label>
+		<br>
+		<input type="text" id="firstName" required>
+
+		<br>
+		<br>
+
+		<label for="lastName">Last name:</label>
+		<br>
+		<input type="text" id="lastName" required>
+
+		<br>
+		<br>
+
+		<input type="submit" value="Click to generate email address" id="emailAddressGeneration" class="button"
+			onclick="generateEmailAddress()">
+
+		<p id="emailAddressNotify">You have been assigned the following email addess: <span id="emailAddress"></p>
+	</form>
+
+</body>
+
+</html>
