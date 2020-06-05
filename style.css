@@ -18,3 +18,8 @@ html {
 #emailAddressNotify {
   visibility: hidden;
 }
+
+#fillOutNotify {
+  color: #f00;
+  visibility: hidden;
+}
