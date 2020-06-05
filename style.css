@@ -15,6 +15,11 @@ html {
   font-size: 16px;
 }
 
-  #emailAddressNotify {
+#emailAddressOutcome {
   visibility: hidden;
+}
+
+#fillOutNotification {
+  visibility: hidden;
+  color: red;
 }

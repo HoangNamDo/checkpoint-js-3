@@ -15,23 +15,23 @@
 
 	<label for="firstName">First name:</label>
 	<br>
-	<input type="text" id="firstName" required>
+	<input type="text" id="firstName">
 
 	<br>
 	<br>
 
 	<label for="lastName">Last name:</label>
 	<br>
-	<input type="text" id="lastName" required>
+	<input type="text" id="lastName">
 
 	<br>
 	<br>
 
-	<!-- <button class="button" onclick="generateEmailAddress()">Click to generate email address</button> -->
-	<input type="submit" value="Click to generate email address" id="emailAddressGeneration" class="button"
-	onclick="generateEmailAddress()">
-	
-	<p id="emailAddressNotify">You have been assigned the following email addess: <span id="emailAddress"></p>
+	<button class="button" onclick="generateEmailAddress()">Click to generate email address</button>
+
+	<p id="fillOutNotification">Please fill out both of first name and last name to generate email address!</p>
+
+	<p id="emailAddressOutcome">You have been assigned the following email addess: <span id="emailAddress"></p>
 
 
 </body>

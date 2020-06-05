@@ -6,12 +6,18 @@ function generateEmailAddress() {
   firstName = document.getElementById("firstName").value;
   lastName = document.getElementById("lastName").value;
 
-  
-  lowerCaseFirstName = firstName.toLowerCase();
-  lowerCaseLastName = lastName.toLowerCase();
+  if (firstName.length != 0 && lastName.length != 0) {
+    lowerCaseFirstName = firstName.toLowerCase();
+    lowerCaseLastName = lastName.toLowerCase();
 
-  emailAddress = `${lowerCaseFirstName}.${lowerCaseLastName}@bellevuecollege.edu`;
+    emailAddress = `${lowerCaseFirstName}.${lowerCaseLastName}@bellevuecollege.edu`;
 
-  document.getElementById("emailAddressNotify").style.visibility = "visible";
-  document.getElementById("emailAddress").innerHTML = emailAddress;
+    document.getElementById("emailAddressOutcome").style.visibility = "visible";
+    document.getElementById("emailAddress").innerHTML = emailAddress;
+    document.getElementById("fillOutNotification").style.visibility = "hidden";
+  } else {
+    document.getElementById("fillOutNotification").style.visibility = "visible";
+    document.getElementById("emailAddressOutcome").style.visibility = "hidden";
+  }
+
 }
