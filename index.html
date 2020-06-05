@@ -12,28 +12,27 @@
 	<script src="script.js">
 	</script>
 
-	<form>
-		<label for="firstName">First name:</label>
-		<br>
-		<input type="text" id="firstName" required>
 
-		<br>
-		<br>
+	<label for="firstName">First name:</label>
+	<br>
+	<input type="text" id="firstName" required>
 
-		<label for="lastName">Last name:</label>
-		<br>
-		<input type="text" id="lastName" required>
+	<br>
+	<br>
 
-		<br>
-		<br>
+	<label for="lastName">Last name:</label>
+	<br>
+	<input type="text" id="lastName" required>
 
-		<p id="fillOutNotify">Please fill out your first name and last name to continue!</p>
-		
-		<input type="submit" value="Click to generate email address" id="emailAddressGeneration" class="button"
-			onclick="generateEmailAddress()">
+	<br>
+	<br>
 
-		<p id="emailAddressNotify">You have been assigned the following email addess: <span id="emailAddress"></p>
-	</form>
+	<!-- <button class="button" onclick="generateEmailAddress()">Click to generate email address</button> -->
+	<input type="submit" value="Click to generate email address" id="emailAddressGeneration" class="button"
+	onclick="generateEmailAddress()">
+	
+	<p id="emailAddressNotify">You have been assigned the following email addess: <span id="emailAddress"></p>
+
 
 </body>
 
