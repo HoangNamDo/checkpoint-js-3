@@ -19,7 +19,7 @@ html {
   visibility: hidden;
 }
 
-#fillOutNotification {
+#emptyNotification {
   visibility: hidden;
   color: red;
 }
